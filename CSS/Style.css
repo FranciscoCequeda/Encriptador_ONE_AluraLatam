@@ -1,0 +1,186 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(circle, rgba(200, 196, 162, 1) 13%, rgba(34, 185, 181, 1) 50%, rgba(6, 129, 128, 1) 67%) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #0A3871;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenido {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+img:hover{
+    filter: brightness(20%) /*blur(1px)*/;
+}
+
+.fa-github:hover{
+    color: black;
+    /* filter: blur(1px); */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje {
+    color: black;
+    font-weight: bolder;
+    margin: 2px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.Crypt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.Crypt:hover {
+    box-shadow: 5px 5px 25px 5px aquamarine;
+    transform: scale(1.005);
+    transition: 400ms ease-in-out;
+}
+
+.Decrypt {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.Decrypt:hover {
+    box-shadow: 5px 5px 25px 5px aquamarine;
+    transform: scale(1.005);
+    transition: 400ms ease-in-out;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border: 1px solid;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+button:nth-child(1) {
+    background-color: rgb(201, 183, 149);
+}
+
+button:last-child {
+    background-color: transparent;
+}
+
+button:hover {
+    box-shadow: 1px 1px 8px 3px black;
+    text-shadow: .5px .2px 1px black;
+    transition: all 600ms ease-in-out;
+}
+
+textarea {
+    width: 350px;
+    height: 180px;
+    color: black;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.textOutput {
+    pointer-events: none;
+}
+
+main img {
+    width: 22px;
+}
+
+footer {
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-github {
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.sponsors img:nth-child(2) {
+    width: 100px;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+textarea::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-button:increment,
+textarea::-webkit-scrollbar-button {
+    display: none;
+}
+
+textarea::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(85, 80, 80, 0.486);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+textarea::-webkit-scrollbar-track {
+    border-radius: 10px;
+}

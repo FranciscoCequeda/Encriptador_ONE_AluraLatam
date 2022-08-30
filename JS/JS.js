@@ -18,6 +18,12 @@ textInput.onkeyup = () => {
     textInput.value = eliminarAcentos(textInput);
 }
 
+textInput.addEventListener("keypress", (event) => {
+    if (event.key == "Enter") {
+        btnEncriptar.click();
+    }
+});
+
 
 btnEncriptar.onclick = () => {
     if (validarInput(textInput) == false) {
